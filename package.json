@@ -1,0 +1,28 @@
+{
+  "name": "devburger-api-novo",
+  "version": "1.0.0",
+  "description": "DevBurger API",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Luisa Falqueto",
+    "url": "https://github.com/luisafalquetoz"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "nodemon": "^3.1.4",
+    "sequelize-cli": "^6.6.2",
+    "sucrase": "^3.35.0"
+  }
+}
