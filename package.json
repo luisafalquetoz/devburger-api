@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "DevBurger API",
   "main": "src/server.js",
-  "type": "module",
   "scripts": {
     "dev": "nodemon"
   },
