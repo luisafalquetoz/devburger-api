@@ -1,4 +1,7 @@
 import Sequelize, { Model } from 'sequelize';
+import 'dotenv/config';
+
+const appUrl = process.env.APP_URL;
 
 class Category extends Model {
 	static init(sequelize) {
@@ -9,7 +12,7 @@ class Category extends Model {
 				url: {
 					type: Sequelize.VIRTUAL,
 					get() {
-						return `http://localhost:3001/category-file/${this.path}`;
+						return `appUrl/category-file/${this.path}`;
 					},
 				},
 			},

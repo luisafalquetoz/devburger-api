@@ -1,13 +1,15 @@
-import Sequelize from 'sequelize';
 import mongoose from 'mongoose';
+import Sequelize from 'sequelize';
 
 import configDatabase from '../config/database';
+import 'dotenv/config';
 
 import Category from '../app/models/Category';
 import Product from '../app/models/Product';
 import User from '../app/models/Users';
 
 const models = [User, Product, Category];
+const mongoUrl = process.env.MONGO_URL;
 
 class Database {
 	constructor() {
@@ -25,7 +27,7 @@ class Database {
 	}
 
 	mongo() {
-		this.mongoConnection = mongoose.connect('mongodb://localhost:27017/devburger')
+		this.mongoConnection = mongoose.connect(mongoUrl);
 	}
 }
 

@@ -1,4 +1,7 @@
 import Sequelize, { Model } from 'sequelize';
+import 'dotenv/config';
+
+const appUrl = process.env.APP_URL;
 
 class Product extends Model {
 	static init(sequelize) {
@@ -11,7 +14,7 @@ class Product extends Model {
 				url: {
 					type: Sequelize.VIRTUAL,
 					get() {
-						return `http://localhost:3001/product-file/${this.path}`;
+						return `appUrl/product-file/${this.path}`;
 					},
 				},
 			},

@@ -1,4 +1,9 @@
+import 'dotenv/config';
+
+const jwtSecret = process.env.JWT_SECRET;
+const jwtExpiresIn = process.env.JWT_EXPIRES_IN;
+
 export default {
-	secret: '975359016138b0223ab789505f7dbeca',
-	expiresIn: '5d',
+	secret: jwtSecret,
+	expiresIn: jwtExpiresIn,
 };
