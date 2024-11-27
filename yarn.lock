@@ -151,6 +151,13 @@
   dependencies:
     undici-types "~6.19.8"
 
+"@types/node@>=8.1.0":
+  version "22.10.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.10.0.tgz#89bfc9e82496b9c7edea3382583fa94f75896e81"
+  integrity sha512-XC70cRZVElFHfIUB40FgZOBbgJYFKKMa5nb9lxcwYstFG/Mi+/Y0bGS+rs6Dmhmkpq4pnNiLiuZAbc02YCOnmA==
+  dependencies:
+    undici-types "~6.20.0"
+
 "@types/validator@^13.7.17":
   version "13.12.2"
   resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.12.2.tgz#760329e756e18a4aab82fc502b51ebdfebbe49f5"
@@ -1613,6 +1620,13 @@ qs@6.13.0:
   dependencies:
     side-channel "^1.0.6"
 
+qs@^6.11.0:
+  version "6.13.1"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.13.1.tgz#3ce5fc72bd3a8171b85c99b93c65dd20b7d1b16e"
+  integrity sha512-EJPeIn0CYrGu+hli1xilKAPXODtJ12T0sP63Ijx2/khC2JtuaN3JyNIpvmnkmaEtha9ocbG4A4cMcr+TvqvwQg==
+  dependencies:
+    side-channel "^1.0.6"
+
 range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
@@ -1927,6 +1941,14 @@ strip-ansi@^7.0.1:
   dependencies:
     ansi-regex "^6.0.1"
 
+stripe@^17.4.0:
+  version "17.4.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-17.4.0.tgz#6eb6f7808b616ae8ef76320da0f0ee07085b15a2"
+  integrity sha512-sQQGZguPxe7/QYXJKtDpfzT2OAH9F8nyE2SOsVdTU793iiU33/dpaKgWaJEGJm8396Yy/6NvTLblgdHlueGLhA==
+  dependencies:
+    "@types/node" ">=8.1.0"
+    qs "^6.11.0"
+
 sucrase@^3.35.0:
   version "3.35.0"
   resolved "https://registry.yarnpkg.com/sucrase/-/sucrase-3.35.0.tgz#57f17a3d7e19b36d8995f06679d121be914ae263"
@@ -2079,6 +2101,11 @@ undici-types@~6.19.8:
   version "6.19.8"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
   integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
+
+undici-types@~6.20.0:
+  version "6.20.0"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.20.0.tgz#8171bf22c1f588d1554d55bf204bc624af388433"
+  integrity sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==
 
 universalify@^2.0.0:
   version "2.0.1"
